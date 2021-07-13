@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Naalone lenaa!</title>
+</head>
+<body>
+    <header> 
+        <a href="#" class="logo"><img src="5min.png" width="1000" height="80"></a>
+        <!-- <div class="toggle"><img src="toogle.png"></div> -->
+    </header> 
+    <div class="banner">
+        <div class="content">
+            <h2>NAALONE LENAA!</h2>
+            <p>Naalone lenaa is an upcoming Telugu short film. Introducing the first look motion poster of Naalone lenaa presenting by A 5MIN FILM. Here we are very happy to announce the lead actor 'MAHESH'.This film is written and directed by Abhilash Tsavalam. </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png">Watch Motion Poster</a>
+            <div class="slide"></div>
+            <!-- <video src="fire-bg.mp4" muted loop autoplay></video> -->
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/profile.php?id=100011232226247"><img src="facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/mahesh_pamarthi/"><img src="instagram.png"></a></li>
+                <li><a href="https://twitter.com/MaheshPamarthi8"><img src="twitter.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <video src="motionvideo.mp4" controls="true"></video>
+        <img src="close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
